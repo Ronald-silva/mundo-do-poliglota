@@ -1,0 +1,29 @@
+.empresas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin: 20px; 
+}
+
+.coluna {
+    
+    padding: 10px; 
+    margin: 0 10px; 
+    width: 25%; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.coluna li {
+    padding: 5px 0; 
+    text-align: left; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .coluna {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+}

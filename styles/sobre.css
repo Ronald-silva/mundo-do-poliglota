@@ -1,0 +1,16 @@
+header, .nav-bar, .links{
+    background-color: #EBE8E6;
+}
+#portugues {
+    background-color: #FDFDFD;
+    padding: 0 5rem 0 3rem;
+}
+
+#espanhol {
+    padding: 0 5rem 0 3rem;
+
+}
+#ingles {
+    background-color: #FDFDFD;
+    padding: 0 5rem 0 3rem;
+}

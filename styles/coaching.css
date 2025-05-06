@@ -1,0 +1,96 @@
+/* Reset e base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #333;
+  }
+  
+  /* Seção principal */
+  section.courses {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Títulos */
+  section.courses h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-left: 6px solid #C26148;
+    padding-left: 16px;
+  }
+  
+  section.courses h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  section.courses h4 {
+    font-size: 1.2rem;
+    color: #C26148;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 6px;
+  }
+  
+  /* Parágrafos */
+  section.courses p {
+    margin-bottom: 16px;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  
+  /* Lista */
+  section.courses ul {
+    margin: 16px 0;
+    padding-left: 20px;
+  }
+  
+  section.courses ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    position: relative;
+    text-align: left;
+  }
+  
+  section.courses ul li::before {
+    content: "✔";
+    color: #C26148;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    section.courses {
+      padding: 30px 15px;
+    }
+  
+    section.courses h2 {
+      font-size: 2rem;
+    }
+  
+    section.courses h3 {
+      font-size: 1.3rem;
+    }
+  
+    section.courses h4 {
+      font-size: 1.1rem;
+    }
+  
+    section.courses p,
+    section.courses ul li {
+      font-size: 0.95rem;
+    }
+  }
+  
