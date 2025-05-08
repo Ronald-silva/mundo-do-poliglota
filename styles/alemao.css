@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+html {
+  font-size: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  html { font-size: 9.411764705882353px; }
+}
+@media only screen and (max-width: 768px) {
+  html { font-size: 10px; }
+}
+@media only screen and (max-width: 400px) {
+  html { font-size: 9.411764705882353px; }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #EBE8E6;
+  font-family: 'Readex Pro', sans-serif;
+  color: #333;
+}
+
+/* Container utilities */
+.fixed-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.row {
+  width: 100%;
+  box-sizing: border-box;
+}
+.column { box-sizing: border-box; }
+
+/* Background Images for Parallax Sections */
+#le_body_row_1 {
+  background-image: url('https://web.archive.org/web/20231022080446im_/https://mundodopoliglota.com/wp-content/uploads/2019/05/20170121_123608.jpg');
+  padding: 75px 0;
+}
+#le_body_row_7 {
+  background-image: url('https://web.archive.org/web/20231022080446im_/https://mundodopoliglota.com/wp-content/uploads/2018/09/DSC_0018.jpg');
+  padding: 100px 0;
+}
+
+/* Hero and parallax sections */
+.row.bg-parallax {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+.row.bg-parallax .op-row-image-color-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Specific overlays */
+#le_body_row_1 .op-row-image-color-overlay {
+  background: #000;
+  opacity: 0.7;
+}
+#le_body_row_7 .op-row-image-color-overlay {
+  background: #dd0000;
+  opacity: 0.7;
+}
+
+.row.bg-parallax .fixed-width {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row.bg-parallax .three-fifths,
+.row.bg-parallax .two-fifths {
+  flex: none;
+}
+.row.bg-parallax .three-fifths { width: 60%; }
+.row.bg-parallax .two-fifths   { width: 40%; }
+
+/* Text colors in parallax */
+.row.bg-parallax h1,
+.row.bg-parallax h2,
+.row.bg-parallax h3,
+.row.bg-parallax p,
+.row.bg-parallax .text {
+  color: #ffffff;
+}
+
+
+
+/* Buttons */
+.css-button.style-1 {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 3rem;
+}
+.css-button.style-1 .text {
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+/* Specific buttons */
+#btn_1_233951b86005aef43dabc8a3eede5f57,
+#btn_1_1de95a5429897062124a10d5dfebd37a {
+  box-sizing: border-box;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  border: 3px solid #ffffff;
+  padding: 20px 60px;
+}
+#btn_1_1919b0782017de38423b8ef76d31021c {
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #dd0000;
+  border: none;
+  padding: 30px 40px;
+}
+#btn_1_1919b0782017de38423b8ef76d31021c .text {
+  font-size: 32px;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Section spacing */
+#le_body_row_2,
+#le_body_row_5 { padding: 75px 0; background: #f7f7f7; }
+#le_body_row_3,
+#le_body_row_4,
+#le_body_row_6 { padding: 75px 0; background: #ffffff; }
+#le_body_row_8 { padding: 75px 0; background: #ffffff; }
+#le_body_row_9,
+#le_body_row_10 { padding: 50px 0; background: #ffffff; }
+#le_body_row_11 { padding: 70px 0; background: #000000; }
+#le_body_row_12 { padding: 0 0 50px; background: #ffffff; }
+
+/* Utility columns */
+.five-columns .cols { float: left; }
+.five-columns .three-fifths { width: 60%; }
+.five-columns .two-fifths   { width: 40%; }
+.four-columns .one-fourth  { width: 25%; }
+.four-columns .two-fourths { width: 50%; }
+.three-columns .one-third  { width: 33.3333%; }
+.one-column .column        { width: 100%; }
+
+/* Clearfix */
+.cf::after { content: ''; display: table; clear: both; }
+
+/* Misc styling */
+h1 { 
+    margin: 0 0 20px; 
+    font-size: 5rem; 
+}
+
+h2 { 
+    margin: 0 0 20px; 
+    font-size: 3.5rem; 
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h3 { margin: 0 0 15px; 
+    font-size: 2rem; 
+}
+
+p { margin: 0 0 15px; 
+    line-height: 1.6; 
+}
+
+/* Skip-link styles */
+.skip-link.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.skip-link.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/* Additional adjustments for full match */
+.row.bg-parallax .op-row-image-color-overlay {
+  z-index: 1;
+}
+.row.bg-parallax .fixed-width {
+  z-index: 2;
+}
+
+.video-plugin-new.youtube {
+  width: 100%;
+  max-width: 853px;
+  margin: 0 auto 20px;
+  display: block;
+}
+.video-plugin-new.youtube iframe {
+  width: 100%;
+  height: 480px;
+}
+
+.op-text-block p {
+  max-width: 600px;
+  margin: 0 auto 15px;
+  text-align: left;
+  font-size: 1.7rem;
+}
+
+.element-container.cf.caps h2,
+.element-container.cf.caps h3 {
+  text-transform: uppercase;
+}
+
+.double-column {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    color: #949292;
+    
+}
+
+.double-column .col-left,
+.double-column .col-right {
+  flex: 1;
+  max-width: 35%; /* cada coluna ocupa no máximo 45% do container */
+}
