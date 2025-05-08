@@ -1,34 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
-html {
-  font-size: 10px;
-}
-/* 
-::-webkit-scrollbar {
-  background-color: #151515;
-  width: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #EBE8E6;
-  border-radius: 5px;
-} */
 
 @media only screen and (max-width: 1024px) {
   html {
     font-size: 9.411764705882353px;
   }
 }
+
 @media only screen and (max-width: 768px) {
   html {
     font-size: 10px;
   }
 }
+
 @media only screen and (max-width: 400px) {
   html {
     font-size: 9.411764705882353px;
   }
+}
+
+
+html {
+  font-size: 10px;
 }
 
 body {
@@ -50,6 +42,7 @@ a {
   text-decoration: none;
   color: #1D1F25;
 }
+
 a:hover {
   text-decoration: none;
   color: #1D1F25;
@@ -171,7 +164,7 @@ section#home #about-button {
     line-height: 1.2em;
   }
   section#home img {
-    width: 100%;
+    width: 85%;
     height: 100%;
   }
 
@@ -252,7 +245,7 @@ section#video h2 {
 }
 
 .item {
-  height: 300px;
+  height: auto;
   margin: 0 1rem;
   background: #FDFDFD;
   padding: 24px;
@@ -260,7 +253,7 @@ section#video h2 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 190px;
+  width: 20rem;
 }
 
 .item img {
@@ -268,6 +261,7 @@ section#video h2 {
   height: 100%;
   object-fit: cover;
   border-radius: 3px;
+  
 }
 
 .item h2 {
@@ -293,6 +287,12 @@ section#video h2 {
   display: inline-block;
   margin-top: 10px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: 30rem;
+  }
 }
 
 /* COACHING */
@@ -701,8 +701,8 @@ section#video h2 {
     }
 
     .empresas {
-      justify-content: space-around; /* Ou center, dependendo do espaçamento desejado */
-      gap: 0.5rem; /* Ajuste o espaçamento entre as colunas */
+      justify-content: space-around; 
+      gap: 0.5rem; 
       padding: 1rem;
     }
 
@@ -712,8 +712,8 @@ section#video h2 {
     }
 
     .colunas {
-      width: 100%; /* As colunas ocupam a largura total em telas menores */
-      margin-right: 0 !important; /* Garante que não haja margem direita */
+      width: 100%; 
+      margin-right: 0 !important; 
     }
 
     .clientes-text {
