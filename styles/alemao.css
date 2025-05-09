@@ -158,7 +158,7 @@ footer {
 
 .secao-video__texto {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
   font-size: 1.5rem;
@@ -166,7 +166,7 @@ footer {
 
 .secao-video__coluna {
   flex: 1;
-  min-width: 50%;
+  min-width: 10%;
   text-align: left;
 }
 
@@ -387,7 +387,8 @@ footer {
   }
 
   .secao-video__texto {
-    flex-direction: column;
+    display: flex;
+    
   }
 
   .secao-video__coluna {
