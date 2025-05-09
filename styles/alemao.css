@@ -29,9 +29,11 @@ ul {
 /* ===== Container ===== */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  
+  
 }
 
 /* ===== Botões ===== */
@@ -68,7 +70,6 @@ ul {
 section, header, footer {
   width: 100%;
 }
-
 /* ===== Seção Hero ===== */
 .secao-hero {
   position: relative;
@@ -125,8 +126,9 @@ section, header, footer {
   text-align: center;
 }
 .secao-video__titulo {
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin-bottom: 4rem;
+  text-transform: uppercase;
 }
 .secao-video__player {
   position: relative;
@@ -150,16 +152,14 @@ section, header, footer {
   flex-wrap: wrap;
   font-size: 1.5rem;
   max-width: 100%;
-  
-  
 }
+
 .secao-video__coluna {
   flex: 1;
   width: 50%;
   text-align: left;
-  
-  
 }
+
 .secao-video__coluna p {
   margin-bottom: 1.5rem;
   color: #979797;
@@ -169,40 +169,38 @@ section, header, footer {
 /* ===== Seção Detalhes ===== */
 .secao-detalhes {
   background-color: #FFFFFF;
-  padding: 7.5rem 0;
+  padding: 5rem 0;
   text-align: center;
+  
 }
 .secao-detalhes__titulo {
-  font-size: 3rem;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  text-align: center;
 }
-
-/* ===== Fundamentos, Aprofundamento, Consolidação ===== */
-/* Wrapper que envolve as três descrições */
 .sessao-descritiva {
 display: flex;
 flex-direction: column;
-gap: 4rem;            /* Espaço entre cada seção */
+gap: 4rem;            
 }
-
 /* Cada seção interna */
 .sessao-descritiva section {
 display: flex;
-align-items: center;  /* Alinha verticalmente */
-gap: 2rem;            /* Espaço entre imagem e texto */
+align-items: center;  
+gap: 2rem;          
 }
 
 /* Ajustes nos containers */
 .sessao-descritiva section img {
-flex-shrink: 0;       /* Não encolhe */
-width: 50%;           /* Metade do espaço */
-max-width: 400px;     /* Limiar para não ultrapassar */
+flex-shrink: 0;       
+width: 90%;           
+max-width: 400px;     
 }
 
 .sessao-descritiva section .container {
-flex: 1;              /* Ocupa o restante */
+flex: 1;             
 text-align: left;
 }
-
 
 .secao-fundamentos,
 .secao-aprofundamento,
@@ -216,6 +214,11 @@ text-align: left;
   width: 50%;
   min-width: 100%	;
 }
+
+#secao-aprofundamento {
+  background-color:#F7F7F7;
+}
+
 .secao-fundamentos__etiqueta,
 .secao-aprofundamento__etiqueta,
 .secao-consolidacao__etiqueta {
@@ -309,11 +312,6 @@ text-align: left;
   margin-bottom: 1.5rem;
 }
 
-.secao-descritiva {
-  width:100% ;
-
-}
-
 .descricao_alemanha {
   background-color: #1D1F25;
   width: 100%;
@@ -322,7 +320,6 @@ text-align: left;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .descricao_alemanha img {
@@ -335,7 +332,6 @@ text-align: left;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -357,6 +353,20 @@ text-align: left;
   margin-top: 4rem;
   text-align: center;
   width: 100%;
+}
+
+.secao-rodape .secao-rodape__chamada {
+  font-size: 3rem;
+}
+
+.secao-rodape .secao-rodape__promo {
+  font-size: 2rem;
+}
+
+.botao--rodape {
+  font-size: 3rem;
+  padding: 2rem 6rem 2rem 6rem;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -388,18 +398,28 @@ text-align: left;
   font-style: italic;
   margin-bottom: 3rem;
 }
+.botao--rodape {
+  width: 40rem;
+  
+}
 
 /* ===== Responsividade ===== */
 @media (max-width: 768px) {
   .secao-hero { 
       background-attachment: scroll; 
-      padding: 5rem 0; 
       display: flex;
+      justify-content: center;
       text-align: center;
   }
   .secao-hero__titulo { 
       font-size: 2.5rem; 
   }
+  .secao-hero__conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
   .secao-video__texto { 
       display: flex;
       text-align: left;
@@ -426,12 +446,12 @@ text-align: left;
       flex-direction: column;
   }
   .secao-detalhes__titulo {
-    margin-bottom: -7rem;
+    
     
 
   }
   .botao { 
-      padding: 1.5rem 13rem; 
+      padding: 1.5rem 8rem; 
       font-size: 1.6rem; 
   }
 }
