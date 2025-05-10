@@ -412,27 +412,6 @@ mark {
   text-shadow: #000000 0px 1px 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1200px) {
   html {
     font-size: 9px;
@@ -442,11 +421,6 @@ mark {
 @media (max-width: 992px) {
   html {
     font-size: 8px;
-  }
-
-  .secao-video__texto {
-    display: flex;
-    
   }
 
   .secao-video__coluna {
@@ -460,17 +434,27 @@ mark {
     font-size: 7px;
   }
 
-  .botao--inscricao {
+  .botao-inscricao {
     padding: 1.5rem 2rem;
     font-size: 1.4rem;
   }
 
-  .secao-hero .container {
+  .botao-promocao {
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  #secao-hero .container {
     align-items: center;
     text-align: center;
   }
 
-  .botao {
+  #secao-promocao .container {
+    align-items: center;
+    text-align: center;
+  }
+
+  #botao {
     padding: 1.5rem 3rem;
   }
 
@@ -488,22 +472,22 @@ mark {
     flex-direction: column;
   }
 
-  .secao-informacoes__coluna,
-  .secao-beneficios__coluna {
+  .secao-informacoes-coluna,
+  .secao-beneficios-coluna {
     min-width: 100%;
     padding: 2rem 0;
   }
 
-  .descricao_alemanha {
+  .descricao-ingles-rodape {
     padding: 6rem 2rem;
   }
 
-  .descricao_alemanha img {
+  .descricao-ingles-rodape img {
     width: 60px;
     margin-bottom: 3rem;
   }
 
-  .descricao_alemanha p {
+  .descricao-ingles-rodape p {
     font-size: 1.6rem;
   }
 }
@@ -513,7 +497,7 @@ mark {
     font-size: 6px;
   }
 
-  .botao {
+  #botao {
     width: 100%;
     max-width: 300px;
   }
@@ -522,7 +506,7 @@ mark {
     font-size: 3.5rem;
   }
 
-  .descricao_alemanha p {
+  .descricao-ingles-rodape p {
     font-size: 1.6rem;
   }
 }
