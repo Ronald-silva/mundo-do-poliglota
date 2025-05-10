@@ -1,0 +1,538 @@
+html {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EBE8E6;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+mark {
+  white-space: pre-wrap;
+}
+
+#secao-hero {
+  position: relative;
+  background: url('../imagens/MÉTODO/DSC_0004.jpg') no-repeat center/cover fixed;
+  display: flex;
+  align-items: center;
+  padding: 7.5rem 0;
+  min-height: 60vh;
+}
+
+#secao-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+#secao-hero .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  align-items: end;
+}
+
+.secao-hero__conteudo {
+  margin-right: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: #FFFFFF;
+}
+
+.secao-hero__subtitulo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.secao-hero__titulo {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.secao-hero__descricao {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+#botao {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+}
+
+.botao-inscricao:hover {
+  background-color: #DD0000;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  border: 0.3rem solid #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.botao-inscricao {
+  border: 0.3rem solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  padding: 2rem 9rem;
+  font-size: 17px;
+}
+
+.secao-detalhes {
+  background-color: #FFFFFF;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.secao-detalhes__titulo {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.sessao-descritiva {
+  display: flex;
+  flex-direction: column;
+}
+
+.sessao-descritiva section {
+  display: flex;
+  align-items: center;
+}
+
+.sessao-descritiva section img {
+  flex-shrink: 0;
+  width: 90%;
+  max-width: 400px;
+}
+
+.sessao-descritiva section .container {
+  flex: 1;
+  text-align: left;
+}
+
+#secao-fundamentos-1 {
+  background-color: #FFFFFF;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.secao-fundamentos,
+.secao-aprofundamento,
+.secao-consolidacao {
+  background-color: #FFFFFF;
+  padding: 7.5rem 0;
+  text-align: left;
+}
+
+#secao-aprofundamento {
+  background-color: #F7F7F7;
+}
+
+.secao-fundamentos__etiqueta,
+.secao-aprofundamento__etiqueta,
+.secao-consolidacao__etiqueta {
+  font-size: 16px;
+  color: #828282;
+  font-weight: normal;
+}
+
+.secao-fundamentos__titulo,
+.secao-aprofundamento__titulo,
+.secao-consolidacao__titulo {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #222222;
+}
+
+.secao-fundamentos__texto,
+.secao-aprofundamento__texto,
+.secao-consolidacao__texto {
+  font-size: 16px;
+  color: #828282;
+}
+
+.ingles-descricao-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ingles-descricao-col-left,
+.ingles-descricao-col-right {
+  flex: 1;
+  margin-bottom: 10rem;
+}
+
+.ingles-descricao-col-right {
+  margin-right: 5rem;
+}
+
+.ingles-descricao-col-left {
+  margin-left: 5rem;
+}
+
+.ingles-descricao-titulo {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.ingles-descricao-container p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #828282;
+  margin-bottom: 1rem;
+}
+
+#secao-promocao {
+  position: relative;
+  height: 40vh;
+  background-image: url(../imagens/ENGLISH-PAGE/DSC_0018.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 30.8812px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#secao-promocao::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 126, 179, 0.7);
+  z-index: 1;
+}
+
+.secao-promocao-container {
+  position: relative;
+  z-index: 2;
+}
+
+.secao-promocao-items {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10rem;
+  margin-top: 5rem;
+  padding: 0 10rem;
+
+}
+
+.secao-promocao-etiqueta {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 300;
+  color: #d0e3f0;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.secao-promocao-titulo {
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+
+.botao-promocao {
+  background-color: transparent;
+  width: 80%;
+  color: #FFFFFF;
+  font-size: 17px;
+  padding: 20px 60px;
+  border: solid 3px #FFFFFF;
+}
+
+.botao-promocao:hover {
+  background-color: transparent;
+  width: 80%;
+  color: #FFFFFF;
+  font-size: 17px;
+  padding: 20px 60px;
+  border: solid 3px #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#secao-convite {
+  background-color: #f7f7f7;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.secao-convite-titulo {
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#secao-informacoes,
+.secao-beneficios {
+  background-color: #f7f7f7;
+  padding: 0 15rem;
+}
+
+.secao-informacoes-coluna,
+.secao-beneficios-coluna {
+  flex: 1;
+  min-width: 28rem;
+}
+
+.secao-informacoes-coluna h3,
+.secao-beneficios-coluna h3 {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  color: #2b2b2b;
+}
+
+.secao-informacoes-coluna p,
+.secao-beneficios-coluna p {
+  color: #828282;
+  font-size: 16px;
+  margin-bottom: 1.1em;
+}
+
+.three-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.descricao-ingles-rodape {
+  background-color: #000;
+  padding: 75px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.descricao-ingles-rodape img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 4rem;
+}
+
+.descricao-ingles-rodape .paragrafos {
+  max-width: 900px;
+}
+
+.descricao-ingles-rodape p {
+  font-size: 25px;
+  line-height: 1.6em;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.descricao-ingles-rodape strong {
+  display: block;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  margin-top: 4rem;
+}
+
+#secao-rodape {
+  background-color: #f7f7f7;
+  padding: 5rem 0 7.5rem;
+  text-align: center;
+}
+
+.secao-rodape-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.secao-rodape-container h2 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #2b2b2b;
+  margin-bottom: 2rem;
+}
+
+.secao-rodape-container p {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  color: #2b2b2b
+}
+
+.botao-rodape {
+  width: 60%;
+  background-color: #DD0000;
+  color: #FFFFFF;
+  padding: 2.5rem 5rem;
+  border-radius: 3px;
+  margin-top: 2rem;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: #000000 0px 1px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 8px;
+  }
+
+  .secao-video__texto {
+    display: flex;
+    
+  }
+
+  .secao-video__coluna {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+
+  .botao--inscricao {
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .secao-hero .container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .botao {
+    padding: 1.5rem 3rem;
+  }
+
+  .sessao-descritiva section {
+    flex-direction: column;
+  }
+
+  .sessao-descritiva section img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .three-columns {
+    flex-direction: column;
+  }
+
+  .secao-informacoes__coluna,
+  .secao-beneficios__coluna {
+    min-width: 100%;
+    padding: 2rem 0;
+  }
+
+  .descricao_alemanha {
+    padding: 6rem 2rem;
+  }
+
+  .descricao_alemanha img {
+    width: 60px;
+    margin-bottom: 3rem;
+  }
+
+  .descricao_alemanha p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+
+  .botao {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .secao-hero__titulo {
+    font-size: 3.5rem;
+  }
+
+  .descricao_alemanha p {
+    font-size: 1.6rem;
+  }
+}
