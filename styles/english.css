@@ -1,0 +1,411 @@
+html {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EBE8E6;
+  color: #333333;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===== Container ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ===== Botões ===== */
+.botao {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+}
+
+.botao--inscricao {
+  border: 0.3rem solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  padding: 2rem 9rem;
+  font-size: 1.6rem;
+}
+
+.botao--promocao {
+  background-color: #DD0000;
+  color: #FFFFFF;
+  padding: 3rem 4rem;
+  font-size: 3.2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.botao--rodape {
+  background-color: #DD0000;
+  color: #FFFFFF;
+  padding: 2.5rem 5rem;
+}
+
+/* ===== Seções Semânticas Gerais ===== */
+section,
+header,
+footer {
+  width: 100%;
+}
+
+/* ===== Seção Hero ===== */
+.secao-hero {
+  position: relative;
+  background: url('https://web.archive.org/web/20231022080446im_/https://mundodopoliglota.com/wp-content/uploads/2019/05/20170121_123608.jpg') no-repeat center/cover fixed;
+  display: flex;
+  align-items: center;
+  padding: 7.5rem 0;
+  min-height: 80vh;
+}
+
+.secao-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.secao-hero .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.secao-hero__subtitulo,
+.secao-hero__titulo,
+.secao-hero__descricao {
+  color: #FFFFFF;
+}
+
+.secao-hero__subtitulo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.secao-hero__titulo {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.secao-hero__descricao {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.secao-detalhes {
+  background-color: #FFFFFF;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.secao-detalhes__titulo {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.sessao-descritiva {
+  display: flex;
+  flex-direction: column;
+}
+
+.sessao-descritiva section {
+  display: flex;
+  align-items: center;
+}
+
+.sessao-descritiva section img {
+  flex-shrink: 0;
+  width: 90%;
+  max-width: 400px;
+}
+
+.sessao-descritiva section .container {
+  flex: 1;
+  text-align: left;
+}
+
+#secao-fundamentos-1 {
+  background-color: #FFFFFF;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.secao-fundamentos,
+.secao-aprofundamento,
+.secao-consolidacao {
+  background-color: #FFFFFF;
+  padding: 7.5rem 0;
+  text-align: left;
+}
+
+#secao-aprofundamento {
+  background-color: #F7F7F7;
+}
+
+.secao-fundamentos__etiqueta,
+.secao-aprofundamento__etiqueta,
+.secao-consolidacao__etiqueta {
+  font-size: 16px;
+  color: #828282;
+  font-weight: normal;
+}
+
+.secao-fundamentos__titulo,
+.secao-aprofundamento__titulo,
+.secao-consolidacao__titulo {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #222222;
+}
+
+.secao-fundamentos__texto,
+.secao-aprofundamento__texto,
+.secao-consolidacao__texto {
+  font-size: 16px;
+  color: #828282;
+}
+
+.secao-promocao {
+  position: relative;
+  background: url('https://web.archive.org/web/20231022080446im_/https://mundodopoliglota.com/wp-content/uploads/2018/09/DSC_0018.jpg') no-repeat center/cover fixed;
+  display: flex;
+  align-items: center;
+  padding: 10rem 0;
+  text-align: center;
+}
+
+.secao-promocao::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(221, 0, 0, 0.7);
+}
+
+.secao-promocao .container {
+  position: relative;
+  z-index: 2;
+}
+
+.secao-promocao__etiqueta {
+  font-size: 0.9rem;
+  color: #D0E3F0;
+  margin-bottom: 2rem;
+}
+
+.secao-promocao__titulo {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 5rem;
+  color: #FFFFFF;
+}
+
+/* ===== Seção Convite ===== */
+.secao-convite {
+  background-color: #FFFFFF;
+  padding: 7.5rem 0;
+  text-align: center;
+}
+
+.secao-convite__titulo {
+  font-size: 3rem;
+}
+
+/* ===== Seções Informações e Benefícios ===== */
+.secao-informacoes,
+.secao-beneficios {
+  background-color: #FFFFFF;
+  padding: 5rem 0;
+}
+
+.three-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.secao-informacoes__coluna,
+.secao-beneficios__coluna {
+  flex: 1;
+  min-width: 28rem;
+}
+
+.secao-informacoes__coluna h3,
+.secao-beneficios__coluna h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Descrição Alemanha ===== */
+.descricao_alemanha {
+  background-color: #1D1F25;
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.descricao_alemanha img {
+  width: 80px;
+  margin-bottom: 4rem;
+}
+
+.descricao_alemanha .paragrafos {
+  max-width: 1000px;
+  padding: 0 2rem;
+}
+
+.descricao_alemanha p {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+
+.descricao_alemanha strong {
+  display: block;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  margin-top: 4rem;
+}
+
+/* ===== Seção Rodapé ===== */
+.secao-rodape {
+  background-color: #FFFFFF;
+  padding: 5rem 0 7.5rem;
+  text-align: center;
+}
+
+.secao-rodape__chamada {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.secao-rodape__promo {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 1200px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 8px;
+  }
+
+  .secao-video__texto {
+    display: flex;
+    
+  }
+
+  .secao-video__coluna {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+
+  .botao--inscricao {
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .secao-hero .container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .botao {
+    padding: 1.5rem 3rem;
+  }
+
+  .sessao-descritiva section {
+    flex-direction: column;
+  }
+
+  .sessao-descritiva section img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .three-columns {
+    flex-direction: column;
+  }
+
+  .secao-informacoes__coluna,
+  .secao-beneficios__coluna {
+    min-width: 100%;
+    padding: 2rem 0;
+  }
+
+  .descricao_alemanha {
+    padding: 6rem 2rem;
+  }
+
+  .descricao_alemanha img {
+    width: 60px;
+    margin-bottom: 3rem;
+  }
+
+  .descricao_alemanha p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+
+  .botao {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .secao-hero__titulo {
+    font-size: 3.5rem;
+  }
+
+  .descricao_alemanha p {
+    font-size: 1.6rem;
+  }
+}
