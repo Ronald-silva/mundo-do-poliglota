@@ -76,14 +76,14 @@ header {
 }
 
 .foto-professor {
-  width: 220px;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
-  border-radius: 8px;
   display: block;
-  margin: 20px auto;
+  margin: 2rem auto;
+  border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 
 /* dropdown mobile */

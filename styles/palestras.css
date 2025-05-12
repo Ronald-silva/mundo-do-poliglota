@@ -76,7 +76,7 @@ header {
 }
 
 .sobre-img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   display: block;
   margin: 2rem auto;
@@ -209,6 +209,7 @@ header {
   .courses p {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
   }
+
 }
 
 @media (max-width: 480px) {
