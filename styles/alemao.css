@@ -77,7 +77,7 @@ footer {
 
 /* HEADER */
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -216,18 +216,25 @@ header {
 }
 
 .secao-video__player {
-  position: relative;
-  max-width: 85.3rem;
-  margin: 0 auto 4rem;
-  padding-top: 56.25%;
+  width: 80%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
-.secao-video__player iframe {
+.div-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+}
+
+.div-video iframe {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  border: 0;
 }
 
 .secao-video__texto {
@@ -469,6 +476,29 @@ header {
   margin-bottom: 3rem;
 }
 
+#back-to-top {
+  display: none;
+  position: fixed;
+  right: 2rem;
+  margin-right: 5rem;
+  bottom: 2rem;
+  z-index: 2000;
+  background: #1D1F25;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: opacity 0.3s;
+}
+
+#back-to-top:active {
+  background: #333;
+}
+
 /* ===== Responsividade ===== */
 @media (max-width: 1200px) {
   html {
@@ -503,6 +533,12 @@ header {
     font-size: 3.5rem;
     border: solid 3px white;
     margin-top: 3rem;
+  }
+
+  .secao-video__player {
+    width: 80%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
   }
 
   .secao-detalhes__titulo {
@@ -630,10 +666,10 @@ header {
   }
 
   header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
-    width: 94%;
+    width: 100%;
     z-index: 1000;
     background: #FDFDFD;
   }
@@ -659,5 +695,13 @@ header {
 
   .secao-hero__titulo {
     font-size: 3.5rem;
+  }
+
+  .secao-video__player {
+    width: 80%;
+  }
+
+  .div-video {
+    padding-bottom: 56.25%;
   }
 }

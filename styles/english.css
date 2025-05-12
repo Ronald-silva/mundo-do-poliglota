@@ -32,7 +32,7 @@ mark {
 
 /* HEADER */
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -491,6 +491,7 @@ header {
   display: none;
   position: fixed;
   right: 2rem;
+  margin-right: 5rem;
   bottom: 2rem;
   z-index: 2000;
   background: #1D1F25;
@@ -504,6 +505,7 @@ header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   transition: opacity 0.3s;
 }
+
 #back-to-top:active {
   background: #333;
 }
@@ -680,7 +682,7 @@ header {
   }
 
   header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 94%;
