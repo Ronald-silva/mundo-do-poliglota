@@ -37,8 +37,11 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 0 2rem;
   background: #FDFDFD;
+}
+
+.nav-bar .youtube {
+  padding-right: 2rem;
 }
 
 .nav-bar {
@@ -56,6 +59,7 @@ header {
   font-size: 3.5rem;
   font-weight: bold;
   color: #1D1F25;
+  padding-left: 2rem;
 }
 
 .nav-bar .links {
@@ -679,7 +683,7 @@ header {
     position: relative;
     top: 0;
     left: 0;
-    width: 88%;
+    width: 100%;
     z-index: 1000;
     background: #FDFDFD;
   }
