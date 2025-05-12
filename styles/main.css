@@ -156,13 +156,15 @@ section#home #about-button {
 }
 
 @media (max-width: 768px) {
-    section#home .desc-home {
-      font-size: 2rem;
-    }
+  section#home .desc-home {
+    font-size: 2rem;
+  }
+
   section#home h1 {
     font-size: 4rem;
     line-height: 1.2em;
   }
+  
   section#home img {
     width: 85%;
     height: 100%;
