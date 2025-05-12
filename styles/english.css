@@ -30,6 +30,83 @@ mark {
   white-space: pre-wrap;
 }
 
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #FDFDFD;
+}
+
+.nav-bar {
+  background: #FDFDFD;
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar .logo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #1D1F25;
+  padding-left: 2rem;
+}
+
+.nav-bar .youtube {
+  padding-right: 2rem;
+}
+
+.nav-bar .links {
+  font-size: 18px;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-bar .toggle-btn {
+  display: none;
+  font-size: 3rem;
+  color: #1D1F25;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header .logo a{
+    font-size: 2.5rem;
+  }
+
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  height: 0;
+  right: 2rem;
+  width: 100px;
+  background-color: rgba(253, 253, 253, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+  height: 240px;
+}
+
+.dropdown-menu li {
+  display: flex;
+  padding: 0.3rem;
+  align-items: center;
+}
+
 #secao-hero {
   position: relative;
   background: url('../imagens/MÉTODO/DSC_0004.jpg') no-repeat center/cover fixed;
@@ -53,7 +130,6 @@ mark {
   display: flex;
   align-items: end;
   flex-direction: column;
-  align-items: end;
 }
 
 .secao-hero__conteudo {
@@ -251,7 +327,6 @@ mark {
   margin-left: 10rem;
   margin-top: 5rem;
   padding: 0 10rem;
-
 }
 
 .secao-promocao-etiqueta {
@@ -412,27 +487,6 @@ mark {
   text-shadow: #000000 0px 1px 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1200px) {
   html {
     font-size: 9px;
@@ -461,13 +515,50 @@ mark {
   }
 
   .botao--inscricao {
-    padding: 1.5rem 2rem;
-    font-size: 1.4rem;
+    padding: 2.5rem 6rem;
+    font-size: 3.5rem;
+    border: solid 3px white;
+    margin-top: 3rem;
+  }
+
+  .nav-bar .links,
+  .nav-bar .toggle-btn {
+    display: none;
+    padding-right: 2rem;
+  }
+
+  .nav-bar .toggle-btn {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: block;
   }
 
   .secao-hero .container {
     align-items: center;
     text-align: center;
+  }
+
+  .secao-detalhes__titulo {
+    padding: 0 5rem 0 5rem;
+  }
+
+  .secao-promocao-etiqueta {
+    font-size: 3.5rem;
+  }
+
+  .secao-rodape-chamada {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding: 0 3rem 0 3rem;
+  }
+
+  .secao-rodape-promo {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    padding: 0 3rem 0 3rem;
   }
 
   .botao {
@@ -488,22 +579,66 @@ mark {
     flex-direction: column;
   }
 
-  .secao-informacoes__coluna,
-  .secao-beneficios__coluna {
+  .secao-fundamentos,
+  .secao-aprofundamento,
+  .secao-consolidacao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:0;
+   }
+
+   .secao-fundamentos__etiqueta,
+   .secao-aprofundamento__etiqueta,
+   .secao-consolidacao__etiqueta {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform:capitalize;
+   }
+
+   .secao-fundamentos__texto,
+   .secao-aprofundamento__texto,
+   .secao-consolidacao__texto {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0 4rem 10rem 4rem;
+   }
+
+   .secao-fundamentos__titulo,
+   .secao-aprofundamento__titulo,
+   .secao-consolidacao__titulo {
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .secao-informacoes-coluna,
+  .secao-beneficios-coluna {
     min-width: 100%;
     padding: 2rem 0;
   }
 
-  .descricao_alemanha {
+  .secao-informacoes-coluna p {
+    padding: 2rem 5rem 0 5rem;
+    font-size: 2.5rem;
+  }
+  .secao-beneficios-coluna p{
+    padding: 2rem 5rem 0 5rem;
+    font-size: 2.5rem;
+  }
+
+  .descricao-ingles-rodape {
     padding: 6rem 2rem;
   }
 
-  .descricao_alemanha img {
+  .descricao-ingles-rodape img {
     width: 60px;
     margin-bottom: 3rem;
   }
 
-  .descricao_alemanha p {
+  .descricao-ingles-rodape p {
     font-size: 1.6rem;
   }
 }
@@ -513,16 +648,234 @@ mark {
     font-size: 6px;
   }
 
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   .botao {
     width: 100%;
     max-width: 300px;
   }
 
-  .secao-hero__titulo {
-    font-size: 3.5rem;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 94%;
+    z-index: 1000;
+    background: #FDFDFD;
   }
 
-  .descricao_alemanha p {
-    font-size: 1.6rem;
+  #secao-hero .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .secao-hero__subtitulo {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .secao-hero__titulo {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .secao-hero__descricao {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10rem;
+    max-width: 600px;
+  }
+
+  .secao-hero__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .botao-inscricao {
+    border: 0.3rem solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .secao-detalhes {
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+
+  .sessao-descritiva {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sessao-descritiva section {
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .sessao-descritiva section img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .sessao-descritiva section .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .secao-detalhes__titulo {
+    font-size: 22px;
+    text-align: center;
+    margin: 5rem 5rem;
+  }
+
+  .secao-fundamentos__etiqueta,
+  .secao-aprofundamento__etiqueta,
+  .secao-consolidacao__etiqueta {
+    font-size: 18px;
+    color: #828282;
+    text-align: center;
+  }
+
+  .secao-fundamentos__titulo,
+  .secao-aprofundamento__titulo,
+  .secao-consolidacao__titulo {
+    font-size: 22px;
+    color: #2b2b2b;
+    padding-bottom: 0;
+  }
+
+  .secao-fundamentos__texto,
+  .secao-aprofundamento__texto,
+  .secao-consolidacao__texto {
+    font-size: 15px;
+    color: #828282;
+    margin: 5rem 5rem;
+  }
+
+  .ingles-descricao-titulo {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  .secao-ingles-descricao {
+    padding-top: 5rem;
+    background: #f7f7f7;
+  }
+
+  .secao-promocao-items {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5rem auto;
+  }
+
+  .secao-promocao-etiqueta {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    color: #d0e3f0;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .secao-promocao-titulo {
+    font-size: 26px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 50px;
+    width: 300px;
+  }
+
+  .botao-promocao {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  #secao-convite {
+    background-color: #f7f7f7;
+    padding: 5rem 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .secao-convite-titulo {
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  #secao-informacoes,
+  #secao-beneficios {
+    background-color: #f7f7f7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+    margin: 0 auto;
+  }
+
+  .secao-informacoes-coluna h3,
+  .secao-beneficios-coluna h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0 auto 1.5rem;
+    color: #2b2b2b;
+  }
+
+  .secao-informacoes-coluna p,
+  .secao-beneficios-coluna p {
+    color: #828282;
+    font-size: 15px;
+    margin-bottom: 1.1em;
+  }
+
+  .descricao-ingles-rodape p {
+    font-size: 15px;
+  }
+
+  .secao-rodape-chamada {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 2rem 2rem;
+  }
+
+  .secao-rodape-promo {
+    font-size: 22px;
+    margin: 2rem 5rem;
+  }
+
+  .botao-rodape {
+    font-size: 18px;
+    width: 80%;
+    max-width: 300px;
   }
 }
