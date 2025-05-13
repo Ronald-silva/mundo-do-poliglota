@@ -18,7 +18,6 @@
   }
 }
 
-
 html {
   font-size: 10px;
 }
@@ -48,9 +47,6 @@ a:hover {
   color: #1D1F25;
 }
 
-/* ——————————————————————————————————————————————
-   HEADER & NAVEGAÇÃO
-—————————————————————————————————————————————— */
 header {
   position: relative;
   padding: 0 2rem;
@@ -87,17 +83,6 @@ header {
   cursor: pointer;
 }
 
-.coach-img img {
-  width: 220px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-  margin: 20px auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* dropdown mobile */
 .dropdown-menu {
   display: none;
   flex-direction: column;
@@ -111,26 +96,27 @@ header {
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 .dropdown-menu.open {
   display: flex;
 }
+
 .dropdown-menu li {
   display: flex;
   padding: 0.3rem;
   align-items: center;
 }
 
-/* ——————————————————————————————————————————————
-   SEÇÃO “SOBRE” (courses)
-—————————————————————————————————————————————— */
 .courses {
   padding-bottom: 4rem;
 }
+
 .courses h2 {
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   margin-bottom: 1.5rem;
   text-align: center;
 }
+
 .courses p {
   margin: 1.5rem 2rem;
   text-align: justify;
@@ -159,6 +145,7 @@ header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   transition: opacity 0.3s;
 }
+
 #back-to-top:active {
   background: #333;
 }
@@ -205,10 +192,12 @@ header {
   gap: 1rem;
   justify-content: center;
 }
+
 .social-links a {
   font-size: 1.8rem;
   transition: transform 0.3s;
 }
+
 .social-links a:hover {
   transform: translateY(-3px);
 }
@@ -217,31 +206,31 @@ header {
   text-align: center;
   margin-top: 1.5rem;
 }
-.footer-bottom .credits a {
-  color: #1D1F25;
-  font-size: 0.875rem;
+
+.courses p {
+  font-size: 14px;
+  margin: 1.5rem 3rem;
 }
 
-/* ——————————————————————————————————————————————
-   MEDIA QUERIES
-—————————————————————————————————————————————— */
 @media (max-width: 768px) {
-  /* Navegação responsiva */
   .links {
     display: none;
   }
+  
   .toggle-btn {
     display: block;
   }
-  /* Seções mais compactas */
+
   .courses p {
     font-size: 14px;
+    margin: 1.5rem 3rem;
   }
 }
 
 @media (max-width: 480px) {
   .courses p {
     font-size: 14px;
+    margin: 1.5rem 3rem;
   }
 
   .logo a {
