@@ -1,13 +1,6 @@
 /* ——————————————————————————————
    RESET & CONFIGURAÇÕES GLOBAIS
 —————————————————————————————— */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 html {
   font-size: clamp(14px, 1.7vw, 18px);
@@ -20,6 +13,8 @@ body {
   line-height: 1.6;
   color: #1d1f25;
   background: #ebe8e6;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -47,10 +42,8 @@ ul {
    HEADER & NAVEGAÇÃO
 —————————————————————————————— */
 header {
-  background: #fdfdfd;
-  padding: 1rem 0;
   position: relative;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background: #FDFDFD;
 }
 
 .nav-bar {
@@ -60,7 +53,7 @@ header {
 }
 
 .logo a {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -169,16 +162,16 @@ header {
    RODAPÉ
 —————————————————————————————— */
 .footer {
-  background: #fdfdfd;
-  padding: 2rem 0 0;
+  background-color: #EBE8E6;
+  color: #1D1F25;
+  padding: 2rem 0;
+  font-family: var(--font-base);
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .footer-col {
@@ -186,11 +179,14 @@ header {
   text-align: center;
 }
 
-.footer-col p,
-.footer-col a {
-  font-size: clamp(1rem, 1.4vw, 1.4rem);
-  color: #1d1f25;
-  padding-bottom: 1.5rem;
+@media (max-width: 480px) {
+  .footer-container {
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .footer-col {
+    flex: 1 1 100%;
+  }
 }
 
 .social-links {

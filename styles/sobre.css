@@ -1,14 +1,6 @@
 /* ——————————————————————————————————————————————
    RESET & CONFIGURAÇÕES GLOBAIS
 —————————————————————————————————————————————— */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html {
   /* tipografia fluida: entre 14px e 18px, de acordo com largura */
   font-size: clamp(14px, 1.7vw, 18px);
@@ -21,6 +13,8 @@ body {
   line-height: 1.6;
   color: #1D1F25;
   background: #EBE8E6;
+  margin: 0;
+  padding: 0;
 }
 
 /* remapear tamanho padrão de links e listas */
@@ -48,10 +42,8 @@ ul {
    HEADER & NAVEGAÇÃO
 —————————————————————————————————————————————— */
 header {
-  background: #FDFDFD;
-  padding: 1rem 0;
   position: relative;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  background: #FDFDFD;
 }
 
 .nav-bar {
@@ -61,7 +53,7 @@ header {
 }
 
 .logo a {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -162,25 +154,42 @@ header {
    FOOTER
 —————————————————————————————————————————————— */
 .footer {
-  background: #FDFDFD;
+  background-color: #EBE8E6;
+  color: #1D1F25;
   padding: 2rem 0;
+  font-family: var(--font-base);
 }
+
 .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-content {
   display: flex;
+  justify-content: space-between;
+  align-items: center;      
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
 }
+
 .footer-col {
-  flex: 1 1 200px;
+  flex: 1 1 30%;            
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
   text-align: center;
+  gap: 0.5rem;
 }
+
 .footer-col p,
 .footer-col a {
-  font-size: clamp(1rem, 1.4vw, 1.4rem);
   color: #1D1F25;
+  font-size: 1.4rem;
+  margin: 0;
 }
+
 .social-links {
   display: flex;
   gap: 1rem;
@@ -192,6 +201,15 @@ header {
 }
 .social-links a:hover {
   transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.footer-bottom .credits a {
+  color: #1D1F25;
+  font-size: 0.875rem;
 }
 
 /* ——————————————————————————————————————————————
