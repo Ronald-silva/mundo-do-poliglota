@@ -122,12 +122,6 @@ header {
   text-align: justify;
 }
 
-.courses.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
 #back-to-top {
   display: none;
   position: fixed;
