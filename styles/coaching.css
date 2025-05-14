@@ -127,7 +127,8 @@ header {
 }
 .courses h3 {
   font-size: clamp(1.5rem, 2.5vw, 2rem);
-  margin-bottom: 1rem;
+  margin: 1.5rem 3rem;
+  text-align: justify;
   text-align: center;
 }
 
