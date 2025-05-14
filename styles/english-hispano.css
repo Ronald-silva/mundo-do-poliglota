@@ -69,6 +69,7 @@ header {
 }
 
 .nav-bar .toggle-btn {
+  margin-right: 2rem;
   display: none;
   font-size: 3rem;
   color: #1D1F25;
@@ -98,10 +99,13 @@ header {
 }
 
 .dropdown-menu.open {
-  height: 240px;
+  height: 110px;
 }
 
 .dropdown-menu li {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #F7F7F7;
   display: flex;
   padding: 0.3rem;
   align-items: center;
