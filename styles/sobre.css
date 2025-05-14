@@ -107,6 +107,26 @@ header {
   align-items: center;
 }
 
+.sobre-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2rem auto;
+  max-width: 50%;
+}
+.sobre-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+  .sobre-img {
+    max-width: 90%;
+  }
+}
+
 .courses {
   padding-bottom: 4rem;
 }
