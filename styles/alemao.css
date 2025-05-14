@@ -51,15 +51,7 @@ ul {
   font-size: 1.6rem;
 }
 
-.botao--promocao {
-  border: solid 4px white;
-  color: #FFFFFF;
-  padding: 3rem 4rem;
-  font-size: 3.2rem;
-  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
-}
-
-.botao--rodape {
+.botao-rodape {
   background-color: #DD0000;
   color: #FFFFFF;
   width: 40%;
@@ -143,10 +135,13 @@ header {
 }
 
 .dropdown-menu.open {
-  height: 240px;
+  height: 110px;
 }
 
 .dropdown-menu li {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #F7F7F7;
   display: flex;
   padding: 0.3rem;
   align-items: center;
@@ -259,13 +254,13 @@ header {
 /* ===== Seção Detalhes ===== */
 .secao-detalhes {
   background-color: #FFFFFF;
-  padding: 5rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
 .secao-detalhes__titulo {
   font-size: 3.5rem;
-  font-weight:bolder;
+  font-weight: bold;
   text-transform: uppercase;
   padding-top: 3rem;
 }
@@ -285,7 +280,7 @@ header {
   flex-shrink: 0;
   width: 90%;
   max-width: 400px;
-  padding: 6rem 0;
+  padding: 0 6rem;
 }
 
 .sessao-descritiva section .container {
@@ -293,13 +288,11 @@ header {
   text-align: left;
 }
 
-/* ===== Seções Fundamentos, Aprofundamento, Consolidação ===== */
 .secao-fundamentos,
 .secao-aprofundamento,
 .secao-consolidacao {
   background-color: #FFFFFF;
-  padding: 5rem 0 5rem 17rem;
-  
+  padding: 5rem 0;
 }
 
 #secao-aprofundamento {
@@ -312,7 +305,6 @@ header {
   font-size: 1.9rem;
   color: #9E9E9E;
   margin-bottom: 1rem;
-  ;
 }
 
 .secao-fundamentos__titulo,
@@ -330,53 +322,83 @@ header {
   font-size: 1.8rem;
   color: #979797;
   line-height: 1.6;
-  margin: 0 auto;
-  
+  margin-left: 2rem;
 }
 
 /* ===== Seção Promoção ===== */
 .secao-promocao {
   position: relative;
   background: url('/imagens/PAGE-ALEMAO/foto-higor.jpg') no-repeat center/cover fixed;
+  background-position: 50% 30.8812px;
+  padding-bottom: 100px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 10rem 0;
   text-align: center;
-  height: 100vh;
+  height: 40vh;
 }
 
-.secao-promocao, #agora {
-  background-color: #F7F7F7;
-  padding: 0.5rem 2rem;
-  line-height: 2.5;
-  color: rgb(74, 74, 110);
-  text-transform: uppercase;
-
-}
-
-.secao-promocao::before {
+#secao-promocao::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(221, 0, 0, 0.7);
+  background: rgba(2, 126, 179, 0.7);
+  z-index: 1;
 }
 
-.secao-promocao .container {
+.secao-promocao-container {
   position: relative;
   z-index: 2;
 }
 
-.secao-promocao__etiqueta {
-  font-size: 2rem;
-  color: #D0E3F0;
-  margin-bottom: 2rem;
+.secao-promocao-items {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10rem;
+  margin-top: 5rem;
+  padding: 0 10rem;
 }
 
-.secao-promocao__titulo {
-  font-size: 3.6rem;
-  line-height: 1.2;
-  margin-bottom: 5rem;
+.secao-promocao-etiqueta {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 300;
+  color: #d0e3f0;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.secao-promocao-titulo {
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.botao-promocao {
+  background-color: transparent;
+  width: 80%;
   color: #FFFFFF;
+  font-size: 17px;
+  padding: 20px 60px;
+  border: solid 3px #FFFFFF;
+}
+
+.botao-promocao:hover {
+  background-color: transparent;
+  width: 80%;
+  color: #FFFFFF;
+  font-size: 17px;
+  padding: 20px 60px;
+  border: solid 3px #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* ===== Seção Convite ===== */
@@ -465,12 +487,12 @@ header {
   text-align: center;
 }
 
-.secao-rodape__chamada {
+.secao-rodape-chamada {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
 
-.secao-rodape__promo {
+.secao-rodape-promo {
   font-size: 2rem;
   font-style: italic;
   margin-bottom: 3rem;
@@ -560,6 +582,9 @@ header {
   }
 
  .secao-hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
   }
@@ -568,17 +593,23 @@ header {
     font-size: 3.5rem;
   }
 
-  .secao-rodape__chamada {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    padding: 0 3rem 0 3rem;
+  #secao-rodape .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .secao-rodape__promo {
+  .secao-rodape-chamada {
+    width: 80%;
+    font-size: 3rem;
+    box-sizing: border-box;
+  }
+
+  .secao-rodape-promo {
+    width: 80%;
     font-size: 3rem;
     margin-bottom: 3rem;
-    padding: 0 3rem 0 3rem;
   }
 
  .sessao-descritiva section {
@@ -634,6 +665,7 @@ header {
     padding: 2rem 5rem 0 5rem;
     font-size: 2.5rem;
   }
+
   .secao-beneficios__coluna p{
     padding: 2rem 5rem 0 5rem;
     font-size: 2.5rem;
@@ -688,13 +720,79 @@ header {
     display: block;
   }
 
-  .botao--rodape {
+  #secao-rodape .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  .secao-rodape-chamada {
+    width: 80%;
+    font-size: 3rem;
+    box-sizing: border-box;
+  }
+
+  .secao-rodape-promo {
+    width: 80%;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .sessao-descritiva .container {
+    width: 80%;
+  }
+
+  .secao-promocao .secao-promocao-container {
+    width: 80%;
+  }
+
+  .secao-promocao-items {
     width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+  .secao-promocao-etiqueta {
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+
+  .secao-promocao-titulo {
+    font-size: 26px;
+    font-weight: normal;
+  }
+
+  .botao-promocao {
+    width: 80%;
+    padding: 2rem 0;
+  }
+
+  .botao-rodape {
+    font-size: 18px;
+    width: 80%;
     max-width: 300px;
   }
 
   .secao-hero__titulo {
     font-size: 3.5rem;
+  }
+
+  #secao-video .container {
+    width: 80%;
+  }
+
+  .three-columns {
+    width: 80%;
+  }
+
+  .secao-convite {
+    padding: 2.5rem 0;
+  }
+
+  .secao-convite .container {
+    width: 80%;
   }
 
   .secao-video__player {
