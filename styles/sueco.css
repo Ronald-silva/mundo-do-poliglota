@@ -98,10 +98,13 @@ header {
 }
 
 .dropdown-menu.open {
-  height: 240px;
+  height: 110px;
 }
 
 .dropdown-menu li {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #F7F7F7;
   display: flex;
   padding: 0.3rem;
   align-items: center;
