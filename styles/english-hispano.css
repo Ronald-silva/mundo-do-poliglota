@@ -208,6 +208,7 @@ header {
   flex-shrink: 0;
   width: 90%;
   max-width: 400px;
+  padding: 0 6rem;
 }
 
 .sessao-descritiva section .container {
